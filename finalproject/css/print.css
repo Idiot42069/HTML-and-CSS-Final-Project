@@ -1,0 +1,35 @@
+*{
+    border:none;
+    margin:0px;
+    padding:0px;
+    text-shadow: none;
+    box-shadow: none;
+}
+aside, img {
+    display:none;
+}
+
+nav ul li{
+    border:none;
+    margin:0px;
+    text-decoration: underline;
+}
+
+a:link, a:visited, a:hover,a:active{
+    color:black;
+    text-shadow:none;
+    display:inline;
+    text-decoration:underline;
+}
+summary{
+    color: black;
+}
+h1{
+    color: black;
+}
+nav{
+    display: none;
+}
+.icon-bar{
+    display:none;
+}

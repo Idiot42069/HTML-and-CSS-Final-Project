@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@font-face {
+    font-family:tapestry;
+    src:url(Tapestry-Regular.ttf);
+ }
+body {
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size:1.5em;
+	background:tan;
+}
+nav {
+	width:100%;
+	height:auto;
+    background-color:linen;
+    text-align:left;
+    clear:both;
+    float:left;  
+}
+nav a {
+    text-decoration:none;
+}
+nav ul li {
+	list-style:none;
+	margin-left:-35px;
+	border-bottom:gray 2px solid;
+	border-left:gray 2px solid;
+}
+nav ul li a:link, nav ul li a:visited {
+    display:block;
+    background-color:white;
+    color:orange;
+   	text-decoration:none;
+}
+nav ul li a:hover, nav ul li a:active{
+    display:block;
+    background-color:black;
+    color:white;
+}
+a:link, a:visited, a:hover,a:active{
+	color:mediumseagreen;
+	text-shadow:1px 1px black;
+}
+header{
+	width:100%;
+	top:0%;
+	color:seagreen;
+	padding:10px;
+	height:auto;
+	background-color:linen;
+	box-shadow:3px 3px #555;
+    opacity:0.8;
+    text-align:center;
+    text-shadow:1px 1px #555;
+}
+h1{
+    color: orange;
+    text-shadow: #555;
+    background-color: black;
+    box-shadow: #111;
+    width: 80%;
+    font-size: 49px;
+    font-family: tapestry, cursive;
+}
+button{
+    background-color: black;
+    color: orange;
+}
+section{
+	opacity:.8;
+	background:lightgray;
+}
+summary{
+    color:orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-shadow: #555;
+    background-color: black;
+    width:50%;
+}
+aside {
+    background: linen;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+footer {
+    background-color: tan;
+    color: #ffffff;
+    text-align: right;
+    font-size: 12px;
+    padding: 15px;
+    opacity:.8;
+}
+img{
+	box-shadow:2px 2px #555;
+}
+.pulse{
+    animation: pulse 4s infinite;
+}
+@keyframes pulse{
+    0% {color:white;text-shadow:1px 1px orange;}
+    50% {color:orange;text-shadow:1px 1px white}
+    100%{color:white;text-shadow:1px 1px orange;}
+}
+.icon-bar {
+    width: 100%; 
+    background-color: black;
+    overflow: auto; 
+}
+
+.icon-bar a {
+    float: left; 
+    text-align: center; 
+    width: 20%; 
+    padding: 12px 0; 
+    transition: all 0.3s ease; 
+    color: orange; 
+    font-size: 36px; 
+}
+
+.icon-bar a:hover {
+    background-color: white;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%; /* this is being overridden in tablet and desktop */
+    float:left; /* setting defaults for everything including tablet and desktop */
+    padding:15px; /* setting defaults for everything including tablet and desktop */
+
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{
+        max-width:1200px;
+        background:url('../images/background.jpg');
+        background-repeat:no-repeat;
+        background-position:center top;
+        background-size:cover;
+        background-color:#111;
+    }
+}
